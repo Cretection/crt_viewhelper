@@ -1,5 +1,5 @@
 <?php
-namespace Cretection\CrtViewhelper\ViewHelpers;
+namespace CrtViewhelper\CrtViewhelper\ViewHelpers;
 
 /*                                                                        *
  * This script is part of the TYPO3 project - inspiring people to share!  *
