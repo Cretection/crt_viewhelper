@@ -14,7 +14,7 @@ namespace CrtViewhelper\CrtViewhelper\ViewHelpers;
  * Public License for more details.                                       *
  *                                                                        */
 
-class ImageWithoutSizeViewHelper extends \TYPO3\CMS\Fluid\ViewHelper\ImageViewHelper {
+class ImageWithoutSizeViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\ImageViewHelper {
 	/**
 	 * Initialize arguments.
 	 *
