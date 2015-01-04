@@ -22,8 +22,9 @@ namespace CrtViewhelper\CrtViewhelper\ViewHelpers;
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
+use \TYPO3\CMS\Fluid\ViewHelpers\ImageViewHelper;
 
-class ImageViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\ImageViewHelper {
+class ImageWithoutSizeViewHelper extends ImageViewHelper {
 	public function initializeArguments() {
 		parent::initializeArguments();
 	}
