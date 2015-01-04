@@ -15,14 +15,6 @@ namespace CrtViewhelper\CrtViewhelper\ViewHelpers;
  *                                                                        */
 
 class ImageWithoutSizeViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\ImageViewHelper {
-	/**
-	 * Initialize arguments.
-	 *
-	 * @return void
-	 */
-	public function initializeArguments() {
-		parent::initializeArguments();
-	}
 	
 	public function render($src = NULL, $width = NULL, $height = NULL, $minWidth = NULL, $minHeight = NULL, $maxWidth = NULL, $maxHeight = NULL, $treatIdAsReference = FALSE, $image = NULL) {
 		if (is_null($src) && is_null($image) || !is_null($src) && !is_null($image)) {
