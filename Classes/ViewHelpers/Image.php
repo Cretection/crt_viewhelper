@@ -1,5 +1,5 @@
 <?php
-namespace CrtViewhelper\CrtViewhelper\ViewHelpers;
+namespace \CrtViewhelper\CrtViewhelper\ViewHelpers;
 
 /***************************************************************
  *  Copyright notice
