@@ -23,7 +23,7 @@ namespace CrtViewhelper\CrtViewhelper\ViewHelpers;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-class LazyImageViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\ImageViewHelper {
+class ImageWithoutSizeViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\ImageViewHelper {
 
 	/**
 	 * Initialize arguments.
