@@ -68,11 +68,18 @@ class ImageWithoutSizeViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\ImageViewH
 		$imageUri = $this->imageService->getImageUri($processedImage);
 
 		$this->tag->addAttribute('src', $imageUri);
-		$this->tag->addAttribute('width', $width);
-		$this->tag->addAttribute('height', $height);
+		//$this->tag->addAttribute('width', $processedImage->getProperty('width'));
+		//$this->tag->addAttribute('height', $processedImage->getProperty('height'));
 
 		$alt = $image->getProperty('alternative');
 		$title = $image->getProperty('title');
+		
+		if(!empty($this->arguments['width'])){
+			$this->tag->addAttribute('width', $processedImage->getProperty('width'));
+		}
+		if(!empty($this->arguments['height'])){
+			$this->tag->addAttribute('height', $processedImage->getProperty('height'));
+		}
 
 		// The alt-attribute is mandatory to have valid html-code, therefore add it even if it is empty
 		if (empty($this->arguments['alt'])) {
