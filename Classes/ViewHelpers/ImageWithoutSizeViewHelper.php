@@ -69,8 +69,8 @@ class ImageWithoutSizeViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\ImageViewH
 		$imageUri = $this->imageService->getImageUri($processedImage);
 
 		$this->tag->addAttribute('data-original', $imageUri);
-		$this->tag->addAttribute('width', $processedImage->getProperty('width'));
-		$this->tag->addAttribute('height', $processedImage->getProperty('height'));
+		//$this->tag->addAttribute('width', $processedImage->getProperty('width'));
+		//$this->tag->addAttribute('height', $processedImage->getProperty('height'));
 
 		$alt = $image->getProperty('alternative');
 		$title = $image->getProperty('title');
