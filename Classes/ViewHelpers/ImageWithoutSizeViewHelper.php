@@ -32,7 +32,7 @@ class ImageWithoutSizeViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\ImageViewH
 	 */
 	public function initializeArguments() {
 		parent::initializeArguments();
-		$this->registerTagAttribute('data-original', 'string', 'original image for lazy loading', FALSE);
+		//$this->registerTagAttribute('data-original', 'string', 'original image for lazy loading', FALSE);
 	}
 
 	/**
@@ -68,7 +68,7 @@ class ImageWithoutSizeViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\ImageViewH
 		$processedImage = $this->imageService->applyProcessingInstructions($image, $processingInstructions);
 		$imageUri = $this->imageService->getImageUri($processedImage);
 
-		$this->tag->addAttribute('data-original', $imageUri);
+		$this->tag->addAttribute('src', $imageUri);
 		//$this->tag->addAttribute('width', $processedImage->getProperty('width'));
 		//$this->tag->addAttribute('height', $processedImage->getProperty('height'));
 
