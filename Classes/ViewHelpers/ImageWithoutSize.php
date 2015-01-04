@@ -24,6 +24,12 @@ namespace CrtViewhelper\CrtViewhelper\ViewHelpers;
  ***************************************************************/
 use \TYPO3\CMS\Fluid\ViewHelpers\ImageViewHelper;
 
+/**
+ * Class ImageWithoutSizeViewHelper
+ *
+ * @package CrtViewhelper\CrtViewhelper\ViewHelpers
+ */
+ 
 class ImageWithoutSizeViewHelper extends ImageViewHelper {
 	public function initializeArguments() {
 		parent::initializeArguments();
