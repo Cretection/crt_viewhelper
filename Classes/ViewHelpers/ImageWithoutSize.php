@@ -1,5 +1,5 @@
 <?php
-namespace CrtViewhelper\crt_viewhelper\ViewHelpers;
+namespace TYPO3\CrtViewhelper\ViewHelpers;
 
 /***************************************************************
  *  Copyright notice
