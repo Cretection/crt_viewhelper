@@ -1,5 +1,5 @@
 <?php
-namespace \CrtViewhelper\CrtViewhelper\ViewHelpers;
+namespace CrtViewhelper\CrtViewhelper\ViewHelpers;
 
 /***************************************************************
  *  Copyright notice
@@ -24,16 +24,9 @@ namespace \CrtViewhelper\CrtViewhelper\ViewHelpers;
  ***************************************************************/
 
 class ImageViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\ImageViewHelper {
-
-	/**
-	 * Initialize arguments.
-	 *
-	 * @return void
-	 */
 	public function initializeArguments() {
 		parent::initializeArguments();
 	}
-
 	public function render($src = NULL, $width = NULL, $height = NULL, $minWidth = NULL, $minHeight = NULL, $maxWidth = NULL, $maxHeight = NULL, $treatIdAsReference = FALSE, $image = NULL) {
 		if (is_null($src) && is_null($image) || !is_null($src) && !is_null($image)) {
 			throw new \TYPO3\CMS\Fluid\Core\ViewHelper\Exception('You must either specify a string src or a File object.', 1382284106);
