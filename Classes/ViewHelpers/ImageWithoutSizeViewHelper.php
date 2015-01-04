@@ -32,7 +32,6 @@ class ImageWithoutSizeViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\ImageViewH
 	 */
 	public function initializeArguments() {
 		parent::initializeArguments();
-		//$this->registerTagAttribute('data-original', 'string', 'original image for lazy loading', FALSE);
 	}
 
 	/**
