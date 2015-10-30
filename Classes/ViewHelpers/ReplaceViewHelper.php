@@ -23,7 +23,7 @@ namespace CrtViewhelper\CrtViewhelper\ViewHelpers;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-class ReplaceViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper {
+class StringReplaceViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper {
 	/**
 	 * Replace the $searchFor string with $replaceString in $string
 	 *
